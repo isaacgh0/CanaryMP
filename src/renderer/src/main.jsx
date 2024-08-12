@@ -1,11 +1,15 @@
-import './assets/main.css'
-
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { PrimeReactProvider } from 'primereact/api'
+
 import App from './App'
+
+import './global/main.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <PrimeReactProvider>
+      <App />
+    </PrimeReactProvider>
   </React.StrictMode>
 )
